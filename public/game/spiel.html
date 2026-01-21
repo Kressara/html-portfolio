@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiel</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            color: rgb(51, 17, 143);
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+
+        }
+
+        .container {
+            padding-top: 20px;
+            color: blue;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header> Number guessing game </header>
+    <div class="container">
+        <h1 id="ergebnis"> Guess the number! </h1>
+        <h2 id="displayTries"> Tries: 0 </h2>
+        <form onsubmit="game(); return false;">
+            <input id="myNumber" type="number" required placeholder="type a number">
+            <button> Guess! </button>
+        </form>
+    </div>
+    <script src="numberguess.js"></script>
+</body>
+
+</html>
